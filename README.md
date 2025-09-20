@@ -4,7 +4,7 @@
 **Código Universitario:** A00369824  
 **Curso:** Ingeniería de Software 5
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto implementa una infraestructura completa de Azure utilizando Terraform para crear una máquina virtual Linux con todos los componentes de red necesarios. La infraestructura incluye un grupo de recursos, red virtual, subred, grupo de seguridad de red, IP pública y una máquina virtual Ubuntu 22.04 LTS.
 
@@ -22,7 +22,7 @@ VM_Terraform/
 └── terraform.tfstate   # Estado de Terraform (ignorado por git)
 ```
 
-## 🔧 Recursos Implementados
+## Recursos Implementados
 
 ### 1. **Resource Group** (`azurerm_resource_group`)
 - Contenedor lógico para todos los recursos
@@ -54,7 +54,7 @@ VM_Terraform/
 - Tamaño: Standard_B1s (1 vCPU, 1 GB RAM)
 - Autenticación por contraseña habilitada
 
-## ⚙️ Variables Configurables
+## Variables Configurables
 
 | Variable | Descripción | Valor por Defecto | Ejemplo |
 |----------|-------------|-------------------|---------|
@@ -64,7 +64,7 @@ VM_Terraform/
 | `admin_username` | Usuario administrador | - | `santiago` |
 | `admin_password` | Contraseña del admin | - | `Sanjuan176108` |
 
-## 🚀 Instrucciones de Uso
+## Instrucciones de Uso
 
 ### Prerrequisitos
 
@@ -151,14 +151,14 @@ terraform destroy
 - Elimina todos los recursos creados
 - Requiere confirmación
 
-## 📊 Outputs del Sistema
+## Outputs del Sistema
 
 El sistema genera los siguientes outputs:
 
 - **`public_ip`**: Dirección IP pública de la VM
 - **`ssh_command`**: Comando completo para conectarse vía SSH
 
-## 🔒 Consideraciones de Seguridad
+## Consideraciones de Seguridad
 
 1. **Archivo `.gitignore`** configurado para excluir:
    - Archivos de estado (`*.tfstate`)
