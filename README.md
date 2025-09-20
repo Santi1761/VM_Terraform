@@ -64,8 +64,8 @@ Gestiona todos los componentes de red:
 - **Network Interface**: Interfaz de red que conecta la VM
 
 **Variables principales:**
-- `address_space`: Espacio de direcciones de la VNet (default: 10.0.0.0/16)
-- `subnet_address_prefixes`: Prefijos de la subred (default: 10.0.1.0/24)
+- `address_space`: Espacio de direcciones de la VNet
+- `subnet_address_prefixes`: Prefijos de la subred 
 - `tags`: Etiquetas para aplicar a los recursos
 
 ### Módulo de Seguridad (modules/security/)
@@ -105,12 +105,12 @@ Gestiona la máquina virtual y almacenamiento:
 - Naming convention consistente
 
 ### 3. **Virtual Network** (`azurerm_virtual_network`)
-- Red virtual con espacio de direcciones: `10.0.0.0/16`
+- Red virtual con espacio de direcciones: 
 - Configuración modular y reutilizable
 - Etiquetado automático
 
 ### 4. **Subnet** (`azurerm_subnet`)
-- Subred con rango: `10.0.1.0/24`
+- Subred con rango: 
 - Aislamiento de red para la VM
 - Configuración flexible
 
