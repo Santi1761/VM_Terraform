@@ -1,0 +1,5 @@
+prefix         = "icesisantiago"   
+location       = "eastus"           
+vm_size        = "Standard_B1s"     
+admin_username = "santiago"         
+admin_password = "Sanjuan176108"  
