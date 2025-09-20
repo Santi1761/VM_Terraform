@@ -1,5 +1,12 @@
 prefix         = "icesisantiago"   
 location       = "eastus"           
+environment    = "dev"
 vm_size        = "Standard_B1s"     
 admin_username = "santiago"         
-admin_password = "Sanjuan176108"  
+use_ssh_key    = true
+allowed_ssh_ips = ["0.0.0.0/0"]
+
+tags = {
+  CostCenter = "Development"
+  Team       = "DevOps"
+}  

@@ -57,9 +57,9 @@ Thumbs.db
 *.bak
 *.backup
 
-# Ignore plan files (uncomment if you want to ignore tfplan files)
-# *.tfplan
-# tfplan
+# Ignore plan files
+*.tfplan
+tfplan*
 
 # Ignore lock files (uncomment if you want to ignore .terraform.lock.hcl)
 # .terraform.lock.hcl

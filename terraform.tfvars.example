@@ -1,0 +1,19 @@
+# Archivo de ejemplo para variables de Terraform
+# Copia este archivo como terraform.tfvars y configura tus valores
+
+prefix         = "tu-prefijo"
+location       = "eastus"
+environment    = "dev"
+vm_size        = "Standard_B1s"
+admin_username = "admin"
+use_ssh_key    = true
+ssh_public_key = null  # Se genera automáticamente si es null
+
+# Para producción, restringir IPs específicas
+allowed_ssh_ips = ["0.0.0.0/0"]
+
+# Tags adicionales
+tags = {
+  CostCenter = "Development"
+  Team       = "DevOps"
+}
