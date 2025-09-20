@@ -30,11 +30,11 @@ VM_Terraform/
 - Etiquetas de identificación
 
 ### 2. **Virtual Network** (`azurerm_virtual_network`)
-- Red virtual con espacio de direcciones: `10.0.0.0/16`
+- Red virtual con espacio de direcciones: 
 - Permite comunicación entre recursos
 
 ### 3. **Subnet** (`azurerm_subnet`)
-- Subred con rango: `10.0.1.0/24`
+- Subred con rango: 
 - Aislamiento de red para la VM
 
 ### 4. **Network Security Group** (`azurerm_network_security_group`)
@@ -54,15 +54,6 @@ VM_Terraform/
 - Tamaño: Standard_B1s (1 vCPU, 1 GB RAM)
 - Autenticación por contraseña habilitada
 
-## Variables Configurables
-
-| Variable | Descripción | Valor por Defecto | Ejemplo |
-|----------|-------------|-------------------|---------|
-| `prefix` | Prefijo para nombrar recursos | - | `icesisantiago` |
-| `location` | Región de Azure | `eastus` | `eastus` |
-| `vm_size` | Tamaño de la VM | `Standard_B1s` | `Standard_B1s` |
-| `admin_username` | Usuario administrador | - | `santiago` |
-| `admin_password` | Contraseña del admin | - | `Sanjuan176108` |
 
 ## Instrucciones de Uso
 
@@ -138,7 +129,7 @@ terraform output
 #### 7. **Conectar a la VM:**
 ```bash
 # Usar el comando mostrado en outputs
-ssh santiago@172.173.161.71
+
 
 # O usar el output de Terraform
 terraform output ssh_command
